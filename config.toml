@@ -1,0 +1,186 @@
+name = "#CHLOR PANIQUE SERVER"
+
+motd = [
+ "WELCOME TO #CHLOR PANIQUE SERVER!"
+]
+
+help = [
+  "/m - to use medkit, /squad - to join squad, /pm - to send pm, /admin - pm to admin"
+]
+
+rules = [
+  "Cheating isn't welcome. Griefing is frowned upon. Have fun!"
+]
+
+tips = [
+ "/m - to use medkit", "/squad N - to join squad (example /squad 3)", "aim and v - to use airstrike or /a coordinates", "/admin - pm to admin", "Use OS client https://openspades.yvt.jp/"
+]
+
+tips_frequency = "5min"
+
+master = true
+
+max_players = 64
+
+server_prefix = "♠ SERVER ♠"
+
+max_connections_per_ip = 1
+
+port = 32887
+
+network_interface = ""
+
+scripts = [
+ "piqueserver.scripts.rollback",
+ "piqueserver.scripts.protect",
+ "piqueserver.scripts.map_extensions",
+ "piqueserver.scripts.disco",
+ "piqueserver.scripts.votekick",
+ "piqueserver.scripts.ratio",
+ "piqueserver.scripts.passreload",
+ "piqueserver.scripts.squad",
+ "piqueserver.scripts.airstrike2",
+ "piqueserver.scripts.medkit",
+ "piqueserver.scripts.minefield",
+ "piqueserver.scripts.nointelonwalls",
+ "piqueserver.scripts.nospadingwalls",
+ "piqueserver.scripts.savemap",
+ "piqueserver.scripts.spadenadefix",
+ "piqueserver.scripts.spawn_protect",
+ "piqueserver.scripts.strongblock",
+ "piqueserver.scripts.timedmute",
+ "piqueserver.scripts.welcome"
+]
+
+login_retries = 2
+
+rotation = [
+  "NukeTown",
+  "HarborNoon",
+  "WarIsland",
+  "VipIsland",
+  "Battlecity",
+  "FyPoolDay",
+  "SpermOasis"
+]
+
+random_rotation = false
+
+game_mode = "ctf"
+
+default_time_limit = "1hours"
+advance_on_win = true
+
+respawn_time = "8sec"
+
+respawn_waves = true
+
+friendly_fire = false
+
+friendly_fire_on_grief = false
+
+grief_friendly_fire_time = "5sec"
+
+spade_teamkills_on_grief = false
+
+balanced_teams = 2
+
+teamswitch_interval = "10sec"
+teamswitch_allowed = true
+
+speedhack_detect = true
+
+rubberband_distance = 13
+
+melee_damage = 50
+
+fall_damage = true
+
+user_blocks_only = false
+
+set_god_build = false
+
+time_announcements = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 60, 120, 180, 240, 300, 600, 900, 1200, 1800, 2400, 3000]
+
+cap_limit = 7
+
+everyone_is_admin = false
+
+[team1]
+name = "GOVNO"
+color = [255, 0, 0]
+
+[team2]
+name = "MOCHA"
+color = [0, 0, 255]
+
+[passwords]
+admin = [""]
+moderator = [""]
+
+
+[bans]
+default_duration = "1day"
+
+file = "bans.txt"
+
+publish = false
+publish_port = 32885
+
+[rights]
+moderator = [
+ "map", "advancemap", "resetgame", "reloadconfig", "protect",
+ "setbalance", "togglebuild", "togglekill", "toggleteamkill", "timelimit", "tvk", "fog",
+ "showrotation", "revertrotation", "savemap", "rmsaved", "cancel", "rollback", "rollbackcancel",
+ "kick", "ban", "hban", "dban", "wban", "pban", "banip", "unban", "undoban", "mute", "unmute"
+]
+
+[logging]
+loglevel = "info"
+
+logfile = "./logs/log.txt"
+
+rotate_daily = true
+
+profile = false
+
+[status_server]
+enabled = false
+port = 32886
+logging = true
+
+[irc]
+enabled = true
+nickname = "aos"
+username = "aos"
+realname = "aos"
+server = "chat.freenode.net"
+port = 6667
+channel = "#pouque"
+password = ""
+
+commandprefix = "!"
+chatprefix = "."
+
+[ssh]
+enabled = false
+
+[squad]
+respawn_time = "15sec"
+size = 2
+auto_squad = false
+
+[votekick]
+percentage = 50
+ban_duration = "30min"
+public_votes = true
+
+[medkit]
+medkits = 1
+medkit_heal_amount = 45
+
+[spawn_protect]
+protection_time = "2sec"
+
+[welcome]
+welcomes = { Herbicide = "HERB FUCK YOU!", Hitler = "HITLER FUCK YOU!", Bratislava= "BRATISLAVA FUCK YOU!" }
